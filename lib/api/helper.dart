@@ -7,7 +7,7 @@ import '../models/subs.dart';
 class AuthApi {
   static Future<List<VideoData>> getVideos() async {
     try {
-      const url = 'https://8682-35-227-90-203.ngrok-free.app/videos/list';
+      const url = 'localhost/videos/list';
       var response = await http.get(Uri.parse(url));
 
       print('Réponse de l\'API : ${response.body}');
